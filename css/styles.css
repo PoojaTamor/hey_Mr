@@ -1,0 +1,182 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+html {
+	font: clamp(0.9rem, 1.5vw, 0.98rem)/1.44 ;
+	background-color: hsl(25, 100%, 92%);
+	color: hsl(25,50%,5%);
+	font-family: "Roboto Slab", serif;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	
+}
+h5{
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 14px;
+	/* font-weight: bold; */
+	/* font-family: "Creepster", system-ui; */
+}
+b{
+font-weight: 700 !;
+}
+.book img{
+	width: 90%;
+	height:170px;
+	}
+	.firstbig::first-letter{
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+p{
+	font-size: 12px;
+	text-align: justify;
+	padding-inline: 5px;
+	margin-bottom: 0px;
+	pointer-events: none;
+	/* font-weight: 400; */
+	font-family: "Roboto Slab", serif;
+	line-height: 1.3;
+	letter-spacing: 0px;
+	hyphens: auto;
+	text-align: justify;
+font-weight: 400;
+	color: #2c2c2c;
+	/* font-family: "Unkempt", cursive; */
+}
+.container-fluid, .book-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container-fluid{
+	height: 100vh;
+	background:  linear-gradient(
+      rgba(240, 221, 221, 0.9), 
+      rgba(240, 221, 221, 0.9)), url(https://s-media-cache-ak0.pinimg.com/originals/30/b3/a9/30b3a9b27032a6b9c1d7a69d2400fb9e.jpg);
+}
+
+.book-content{
+	width: 65%;
+	min-width: 250px;
+	max-width: 400px;
+	height: 330px;
+	/* color: #fee7d5; */
+	position: relative;
+	perspective: 1000px;
+	transition: 1s;
+}
+
+.book{
+	position: absolute;
+	width: 65%;
+	height: 100%;
+	transition: 1s;
+	transform-style: preserve-3d;
+	transform-origin: left; 
+}
+.face-front, .face-back{
+	width: 100%;
+	height: 100%;
+	/* background-color: aliceblue; */
+	background-color: #f9f0eb;
+
+	/* background: radial-gradient(circle, white 40%, #2c2c2c 211%); */
+		padding:  0.2em 1em;
+
+	box-sizing: border-box;
+	overflow: hidden;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.face-front{
+	/* box-shadow: inset 3px 0px 20px -7px black; */
+	/* box-shadow: 0 0.5em 20px rgba(0, 0, 0, 0.3); */
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.face-back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateZ(-1px) rotateY(180deg);
+	/* box-shadow: 0 0.5em 20px rgba(0, 0, 0, 0.3); */
+	/* box-shadow: inset -3px 1px 20px -7px black; */
+	box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.1);
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+span{
+	font-size: 0.7rem;
+	padding-left: 7px;
+}
+
+.book {
+    transition: transform 1.6s ease;
+	/* text-align: center; */
+}
+
+#portada{
+	background: url('../img/Front.png');
+}
+#portada-back{
+	background: url('../img/back.png');
+}
+#portada, #portada-back{
+	background-size: 100% 100%;
+}
+
+
+
+.trnsf{
+	transform: translateX(80px);
+}
+.trnsf-reset{
+	transform: translateX(0px);
+}
+
+
+@media (max-width: 500px){
+	p{
+		font-size: 0.31rem;
+	padding-inline: 3px;
+
+	}
+
+	h5{
+		font-size: 8px;
+	}
+
+	
+		span{
+			font-size: 0.2rem;
+			/* position: relative; */
+			/* bottom: -20px; */
+			
+		}
+
+		.moral  p{
+			margin-top:0px;
+		}
+		.book-content{
+			width: 70%;
+			height: 250px;
+			min-width:unset;
+			max-width: unset;
+
+		}
+		.face-front, .face-back{
+		background: radial-gradient(circle, white 40%, #2c2c2c 154%);
+	}
+}
+
+
+
+
