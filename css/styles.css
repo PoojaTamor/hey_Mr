@@ -124,7 +124,7 @@ span{
 }
 
 #portada{
-	background: url('../img/Front.png');
+	background: url("../img/HEY.png");
 }
 #portada-back{
 	background: url('../img/back.png');
