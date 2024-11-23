@@ -94,12 +94,20 @@ font-weight: 400;
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
 }
+.lastimg{
+	width: 100% !important;
+	/* border: 1px solid #000; */
+	text-align: center;
+	height: 70% !important;
+	margin-top: 2px;
+}
 
 .face-front{
 	/* box-shadow: inset 3px 0px 20px -7px black; */
 	/* box-shadow: 0 0.5em 20px rgba(0, 0, 0, 0.3); */
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
+	box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.1);
 }
 .face-back{
 	position: absolute;
@@ -124,7 +132,7 @@ span{
 }
 
 #portada{
-	background: url("../img/HEY.png");
+	background: url("../img/front\ \(2\).png");
 }
 #portada-back{
 	background: url('../img/back.png');
@@ -143,9 +151,14 @@ span{
 }
 
 
+
 @media (max-width: 500px){
+	.firstbig::first-letter{
+		font-size: 1rem;
+		font-weight: 600;
+	}
 	p{
-		font-size: 0.31rem;
+		font-size: 0.49rem;
 	padding-inline: 3px;
 
 	}
@@ -156,11 +169,12 @@ span{
 
 	
 		span{
-			font-size: 0.2rem;
+			font-size: 0.4rem;
 			/* position: relative; */
 			/* bottom: -20px; */
 			
 		}
+		
 
 		.moral  p{
 			margin-top:0px;
@@ -173,8 +187,10 @@ span{
 
 		}
 		.face-front, .face-back{
-		background: radial-gradient(circle, white 40%, #2c2c2c 154%);
-	}
+			
+			box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);;
+		}
+	
 }
 
 
