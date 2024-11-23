@@ -5,8 +5,7 @@
 
 html {
 	font: clamp(0.9rem, 1.5vw, 0.98rem)/1.44 ;
-	background-color: hsl(25, 100%, 92%);
-	color: hsl(25,50%,5%);
+	
 	font-family: "Roboto Slab", serif;
 }
 
@@ -57,7 +56,7 @@ font-weight: 400;
 .container-fluid{
 	height: 100vh;
 	background:  linear-gradient(
-      rgba(240, 221, 221, 0.9), 
+      rgba(243, 234, 234, 0.9), 
       rgba(240, 221, 221, 0.9)), url(https://s-media-cache-ak0.pinimg.com/originals/30/b3/a9/30b3a9b27032a6b9c1d7a69d2400fb9e.jpg);
 }
 
@@ -84,7 +83,7 @@ font-weight: 400;
 	width: 100%;
 	height: 100%;
 	/* background-color: aliceblue; */
-	background-color: #f9f0eb;
+	background-color: #fdfbf9;
 
 	/* background: radial-gradient(circle, white 40%, #2c2c2c 211%); */
 		padding:  0.2em 1em;
@@ -94,20 +93,15 @@ font-weight: 400;
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
 }
-.lastimg{
-	width: 100% !important;
-	/* border: 1px solid #000; */
-	text-align: center;
-	height: 70% !important;
-	margin-top: 2px;
-}
+
 
 .face-front{
 	/* box-shadow: inset 3px 0px 20px -7px black; */
 	/* box-shadow: 0 0.5em 20px rgba(0, 0, 0, 0.3); */
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
-	box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+	/* box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.1); */
 }
 .face-back{
 	position: absolute;
@@ -116,7 +110,8 @@ font-weight: 400;
 	transform: translateZ(-1px) rotateY(180deg);
 	/* box-shadow: 0 0.5em 20px rgba(0, 0, 0, 0.3); */
 	/* box-shadow: inset -3px 1px 20px -7px black; */
-	box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.1);
+	/* box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.1); */
+	box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 }
@@ -132,10 +127,10 @@ span{
 }
 
 #portada{
-	background: url("../img/front\ \(2\).png");
+	background: url("../img/2.png");
 }
 #portada-back{
-	background: url('../img/back.png');
+	background: url('../img/3.png');
 }
 #portada, #portada-back{
 	background-size: 100% 100%;
@@ -186,10 +181,7 @@ span{
 			max-width: unset;
 
 		}
-		.face-front, .face-back{
-			
-			box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);;
-		}
+		
 	
 }
 
